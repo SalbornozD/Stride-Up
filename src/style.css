@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.catalogo{
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.vista-previa-libro{
+    height: 200px;
+    width: 350px;
+    margin-top: 10px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-areas: "imagen titulo"
+                         "imagen detalle";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 30%;
+}
+
+.vista-previa-libro img{
+    width: 100%;
+    height: 100%;
+    grid-area: imagen;
+    object-fit: cover;
+}
+
+.vista-previa-libro h5{
+    grid-area: titulo;
+}
+
+.vista-previa-libro p{
+    grid-area: detalle;
+}
+
+.vista-completa-libro{
+    height: 400px;
+    width: 100%;
+    display: grid;
+    padding-left: 30px;
+    padding-right: 30px;
+    grid-template-areas: "imagen titulo titulo"
+                         "imagen categoria autor"
+                         "imagen descripcion descripcion"
+                         "imagen precio precio";
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.vista-completa-libro img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    grid-area: imagen;
+}
+
+.titulo{
+    grid-area: titulo;
+}
+
+.categoria{
+    grid-area: categoria;
+}
+
+.precio{
+    grid-area: precio;
+}
+
+.autor{
+    grid-area: autor;
+}
+
+.descripcion{
+    grid-area: descripcion;
+    text-align: justify;
+}
