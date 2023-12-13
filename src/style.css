@@ -38,6 +38,7 @@
 }
 
 .vista-completa-libro{
+    margin-top: 20px;
     height: 400px;
     width: 100%;
     display: grid;
@@ -46,20 +47,20 @@
     grid-template-areas: "imagen titulo titulo"
                          "imagen categoria autor"
                          "imagen descripcion descripcion"
-                         "imagen precio precio";
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+                         "imagen precio btn-agregar-carrito";
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 1fr 1fr 3fr 40px;
 }
 
 .vista-completa-libro img{
     height: 100%;
-    width: 100%;
     object-fit: cover;
     grid-area: imagen;
 }
 
 .titulo{
     grid-area: titulo;
+    font-size: 3rem;
 }
 
 .categoria{
@@ -77,4 +78,9 @@
 .descripcion{
     grid-area: descripcion;
     text-align: justify;
+}
+
+.btn-agregar-carrito{
+    grid-area: btn-agregar-carrito;
+    background-color: white;
 }
