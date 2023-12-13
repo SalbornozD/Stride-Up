@@ -29,6 +29,11 @@ const Navbar = () => {
                 Novela juvenil
               </Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/category/Terror">
+                Terror
+              </Link>
+            </li>
           </ul>
         </div>
         <CartWidget />
