@@ -9,7 +9,13 @@ const CartWidget = () => {
     <div className="cart-widget">
       <Link to="/cart">
         <i className="fas fa-shopping-cart"></i>
-        <span>{cart.length}</span>
+        {cart.length === 0 ? (
+        <p>Carrito</p>
+        ) : (
+        <>
+        <p>Carrito {cart.length}</p>  
+        </>
+        )}
       </Link>
     </div>
   );

@@ -33,7 +33,7 @@ const ItemDetailContainer = () => {
   }, [id]);
 
   const agregarAlCarrito = () => {
-    addToCart({ id: producto.id, name: producto.titulo, price: producto.precio });
+    addToCart({ id: producto.id, titulo: producto.titulo, precio: producto.precio, imagen: producto.imagen });
     
   };
 

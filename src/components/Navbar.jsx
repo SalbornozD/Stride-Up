@@ -15,18 +15,18 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <Link className="nav-link" to="/category/Infantil">
-                Infantil
+              <Link className="nav-link" to="/category/Autoayuda">
+                Autoayuda
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/category/Terror">
-                Terror
+              <Link className="nav-link" to="/category/Medicina no tradicional">
+                Medicina no tradicional
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/category/Ficcion">
-                Ficción
+              <Link className="nav-link" to="/category/Novela juvenil">
+                Novela juvenil
               </Link>
             </li>
           </ul>

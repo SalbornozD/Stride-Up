@@ -23,10 +23,11 @@
 }
 
 .vista-previa-libro img{
-    width: 100%;
     height: 100%;
     grid-area: imagen;
     object-fit: cover;
+    justify-self: center;
+    overflow: hidden;
 }
 
 .vista-previa-libro h5{
@@ -84,3 +85,49 @@
     grid-area: btn-agregar-carrito;
     background-color: white;
 }
+
+#pagina-carrito{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.producto-carrito{
+    margin-top: 25px;
+    height:200px;
+    width: 800px;
+    display: grid;
+    grid-template-areas: "imagen titulo titulo"
+                         "imagen none none"
+                         "imagen precio btn-eliminar";
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 1fr 1fr 40px;
+}
+
+.foto-carrito{
+    grid-area: imagen;
+    object-fit: cover;
+    height: 100%;
+}
+
+.titulo-carrito{
+    grid-area: titulo;
+}
+
+.precio-carrito{
+    grid-area: precio;
+}
+
+.btn-eliminar{
+    grid-area: btn-eliminar;
+}
+

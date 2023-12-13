@@ -1,9 +1,11 @@
 import React, { createContext, useContext, useReducer } from 'react';
 
+// Definición de acciones
 const ADD_TO_CART = 'ADD_TO_CART';
 const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 const CLEAR_CART = 'CLEAR_CART';
 
+// Reducer para gestionar el estado del carrito
 const cartReducer = (state, action) => {
   switch (action.type) {
     case ADD_TO_CART:
